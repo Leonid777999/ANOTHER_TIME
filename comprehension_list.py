@@ -29,4 +29,5 @@ print(new_fourth_task_list)
 #########################################################
 fifth_task_list = [1, 7, 11, 14, 23, 24]
 
-new_fifth_task_list = [x for x in fifth_task_list if map()]
+new_fifth_task_list = [x for x in fifth_task_list if not any(map(lambda y: int(y) == 0 or x%int(y) != 0, str(x)))]
+print(new_fifth_task_list)
